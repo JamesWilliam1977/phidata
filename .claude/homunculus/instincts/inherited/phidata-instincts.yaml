@@ -1,0 +1,276 @@
+# Instincts generated from https://github.com/JamesWilliam1977/phidata
+# Generated: 2026-04-29T07:16:02.408Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: phidata-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/phidata
+---
+
+# Phidata Commit Length
+
+## Action
+
+Keep commit messages concise (~34 characters)
+
+## Evidence
+
+- Average commit message length: 34 chars
+- Based on 2 commits
+
+---
+id: phidata-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/phidata
+---
+
+# Phidata Naming Files
+
+## Action
+
+Use snake_case naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: snake_case
+
+---
+id: phidata-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/phidata
+---
+
+# Phidata Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: phidata-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/phidata
+---
+
+# Phidata Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: phidata-instinct-file-naming
+trigger: "When creating a new Python file"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/phidata
+---
+
+# Phidata Instinct File Naming
+
+## Action
+
+Name the file using snake_case
+
+## Evidence
+
+- Pattern in namingConventions.files: snake_case
+
+---
+id: phidata-instinct-function-naming
+trigger: "When defining a new function"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/phidata
+---
+
+# Phidata Instinct Function Naming
+
+## Action
+
+Use camelCase for the function name
+
+## Evidence
+
+- Pattern in namingConventions.functions: camelCase
+
+---
+id: phidata-instinct-class-naming
+trigger: "When defining a new class"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/phidata
+---
+
+# Phidata Instinct Class Naming
+
+## Action
+
+Use PascalCase for the class name
+
+## Evidence
+
+- Pattern in namingConventions.classes: PascalCase
+
+---
+id: phidata-instinct-constant-naming
+trigger: "When defining a constant"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/phidata
+---
+
+# Phidata Instinct Constant Naming
+
+## Action
+
+Use SCREAMING_SNAKE_CASE for the constant name
+
+## Evidence
+
+- Pattern in namingConventions.constants: SCREAMING_SNAKE_CASE
+
+---
+id: phidata-instinct-import-style
+trigger: "When importing modules within the package"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/phidata
+---
+
+# Phidata Instinct Import Style
+
+## Action
+
+Use relative imports
+
+## Evidence
+
+- Pattern in importStyle: relative
+
+---
+id: phidata-instinct-export-style
+trigger: "When exporting functions or classes"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/phidata
+---
+
+# Phidata Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in exportStyle: named
+
+---
+id: phidata-instinct-commit-prefix-fix
+trigger: "When committing a bug fix"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: JamesWilliam1977/phidata
+---
+
+# Phidata Instinct Commit Prefix Fix
+
+## Action
+
+Prefix the commit message with 'fix:'
+
+## Evidence
+
+- Seen in commit: fix: workflow cancellation persistance (#7732)
+
+---
+id: phidata-instinct-commit-prefix-cookbook
+trigger: "When committing changes related to the cookbook"
+confidence: 0.8
+domain: git
+source: repo-analysis
+source_repo: JamesWilliam1977/phidata
+---
+
+# Phidata Instinct Commit Prefix Cookbook
+
+## Action
+
+Prefix the commit message with 'cookbook:'
+
+## Evidence
+
+- Seen in commit: cookbook: team metrics
+
+---
+id: phidata-instinct-commit-length
+trigger: "When writing a commit message"
+confidence: 0.7
+domain: git
+source: repo-analysis
+source_repo: JamesWilliam1977/phidata
+---
+
+# Phidata Instinct Commit Length
+
+## Action
+
+Keep the commit message concise (average length ~34 characters)
+
+## Evidence
+
+- Pattern in commits.averageLength: 34
+
+---
+id: phidata-instinct-test-location-mixed
+trigger: "When adding new tests"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: JamesWilliam1977/phidata
+---
+
+# Phidata Instinct Test Location Mixed
+
+## Action
+
+Place tests in either the main source folder or a dedicated test folder, as both are used
+
+## Evidence
+
+- Pattern in architecture.folderStructure.testLocation: mixed
+
